@@ -1,0 +1,283 @@
+{
+  "description": "准确性测试用例 - 测试模型回答是否准确、正确",
+  "test_cases": [
+    {
+      "id": "ACC_001",
+      "name": "基础事实问答-肯定回答",
+      "category": "factual_qa",
+      "query": "天空是什么颜色的？",
+      "expected_keywords": ["蓝色", "蓝天"],
+      "mock_response": "天空在晴朗的日子里是蓝色的。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_002",
+      "name": "基础事实问答-否定回答",
+      "category": "factual_qa",
+      "query": "2025年有世界杯吗？",
+      "expected_keywords": ["没有", "不", "2026"],
+      "mock_response": "2025年没有世界杯，下一届世界杯将在2026年举办。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_003",
+      "name": "数学计算-简单加法",
+      "category": "math",
+      "query": "5加3等于多少？",
+      "expected_keywords": ["8"],
+      "expected_numbers": ["8"],
+      "mock_response": "5加3等于8。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_004",
+      "name": "数学计算-简单乘法",
+      "category": "math",
+      "query": "6乘7等于多少？",
+      "expected_keywords": ["42"],
+      "expected_numbers": ["42"],
+      "mock_response": "6乘7等于42。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_005",
+      "name": "日期查询-节日",
+      "category": "date",
+      "query": "春节是哪一天？",
+      "expected_keywords": ["农历", "正月初一"],
+      "mock_response": "春节是农历正月初一，是中国最重要的传统节日。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_006",
+      "name": "定义解释-技术术语",
+      "category": "definition",
+      "query": "什么是RAG？",
+      "expected_keywords": ["检索", "增强", "生成"],
+      "mock_response": "RAG是检索增强生成(Retrieval-Augmented Generation)的缩写，是一种结合信息检索和生成式AI的技术。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_007",
+      "name": "概念对比-AI模型",
+      "category": "comparison",
+      "query": "GPT和BERT有什么区别？",
+      "expected_keywords": ["生成式", "理解式", "单向", "双向"],
+      "mock_response": "GPT是生成式模型，BERT是理解式模型。GPT使用单向注意力机制，BERT使用双向注意力机制。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_008",
+      "name": "历史事实-年份",
+      "category": "history",
+      "query": "北京奥运会是哪一年举办的？",
+      "expected_keywords": ["2008"],
+      "expected_numbers": ["2008"],
+      "mock_response": "北京奥运会是在2008年举办的。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_009",
+      "name": "地理知识-首都",
+      "category": "geography",
+      "query": "法国的首都是哪里？",
+      "expected_keywords": ["巴黎"],
+      "mock_response": "法国的首都是巴黎。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_010",
+      "name": "科学知识-物理",
+      "category": "science",
+      "query": "水的沸点是多少度？",
+      "expected_keywords": ["100", "摄氏"],
+      "expected_numbers": ["100"],
+      "mock_response": "在一个标准大气压下，水的沸点是100摄氏度。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_011",
+      "name": "编程知识-Python",
+      "category": "programming",
+      "query": "Python中如何定义列表？",
+      "expected_keywords": ["方括号", "[]", "list"],
+      "mock_response": "在Python中，可以使用方括号[]来定义列表，例如：my_list = [1, 2, 3]。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_012",
+      "name": "文学作品-作者",
+      "category": "literature",
+      "query": "《红楼梦》的作者是谁？",
+      "expected_keywords": ["曹雪芹"],
+      "mock_response": "《红楼梦》的作者是曹雪芹。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_013",
+      "name": "常识推理-天气",
+      "category": "common_sense",
+      "query": "下雨天应该带什么？",
+      "expected_keywords": ["伞", "雨伞"],
+      "mock_response": "下雨天应该带雨伞。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_014",
+      "name": "数量查询-人口",
+      "category": "quantity",
+      "query": "中国大约有多少人口？",
+      "expected_keywords": ["14", "亿"],
+      "expected_numbers": ["14"],
+      "mock_response": "中国大约有14亿人口。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_015",
+      "name": "技术细节-API",
+      "category": "technical",
+      "query": "HTTP状态码404表示什么？",
+      "expected_keywords": ["找不到", "不存在", "Not Found"],
+      "mock_response": "HTTP状态码404表示请求的资源不存在或找不到。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_016",
+      "name": "语言翻译-单词",
+      "category": "translation",
+      "query": "'Hello'用中文怎么说？",
+      "expected_keywords": ["你好"],
+      "mock_response": "'Hello'的中文意思是'你好'。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_017",
+      "name": "时事知识-体育",
+      "category": "current_events",
+      "query": "2024年奥运会在哪里举办？",
+      "expected_keywords": ["巴黎"],
+      "mock_response": "2024年奥运会在法国巴黎举办。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_018",
+      "name": "商业知识-公司",
+      "category": "business",
+      "query": "苹果公司的CEO是谁？",
+      "expected_keywords": ["蒂姆", "库克", "Tim Cook"],
+      "mock_response": "苹果公司的CEO是蒂姆·库克(Tim Cook)。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_019",
+      "name": "健康知识-营养",
+      "category": "health",
+      "query": "维生素C含量最高的水果是什么？",
+      "expected_keywords": ["猕猴桃", "橙子", "柠檬"],
+      "mock_response": "猕猴桃、橙子和柠檬都是维生素C含量很高的水果。",
+      "priority": "low"
+    },
+    {
+      "id": "ACC_020",
+      "name": "数学逻辑-比较",
+      "category": "logic",
+      "query": "10和20哪个更大？",
+      "expected_keywords": ["20", "大"],
+      "expected_numbers": ["20", "10"],
+      "mock_response": "20比10大。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_021",
+      "name": "生物知识-动物",
+      "category": "biology",
+      "query": "熊猫主要吃什么？",
+      "expected_keywords": ["竹子", "竹笋"],
+      "mock_response": "熊猫主要吃竹子和竹笋。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_022",
+      "name": "化学知识-元素",
+      "category": "chemistry",
+      "query": "水的化学式是什么？",
+      "expected_keywords": ["H2O", "氢", "氧"],
+      "mock_response": "水的化学式是H2O，由氢和氧两种元素组成。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_023",
+      "name": "历史人物-科学家",
+      "category": "history_people",
+      "query": "发现万有引力的是谁？",
+      "expected_keywords": ["牛顿"],
+      "mock_response": "发现万有引力的是牛顿。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_024",
+      "name": "地理知识-国家",
+      "category": "geography",
+      "query": "日本位于哪个洲？",
+      "expected_keywords": ["亚洲"],
+      "mock_response": "日本位于亚洲。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_025",
+      "name": "技术概念-区块链",
+      "category": "technology",
+      "query": "什么是区块链？",
+      "expected_keywords": ["分布式", "账本", "不可篡改"],
+      "mock_response": "区块链是一种分布式账本技术，具有不可篡改、去中心化的特点。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_026",
+      "name": "体育知识-规则",
+      "category": "sports",
+      "query": "足球比赛每队有多少人？",
+      "expected_keywords": ["11"],
+      "expected_numbers": ["11"],
+      "mock_response": "足球比赛每队有11名球员。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_027",
+      "name": "音乐知识-乐器",
+      "category": "music",
+      "query": "钢琴有多少个琴键？",
+      "expected_keywords": ["88"],
+      "expected_numbers": ["88"],
+      "mock_response": "标准钢琴有88个琴键。",
+      "priority": "low"
+    },
+    {
+      "id": "ACC_028",
+      "name": "经济概念-通货膨胀",
+      "category": "economics",
+      "query": "什么是通货膨胀？",
+      "expected_keywords": ["物价", "上涨", "货币", "贬值"],
+      "mock_response": "通货膨胀是指货币购买力下降，物价普遍上涨的经济现象。",
+      "priority": "medium"
+    },
+    {
+      "id": "ACC_029",
+      "name": "天文知识-行星",
+      "category": "astronomy",
+      "query": "太阳系最大的行星是哪个？",
+      "expected_keywords": ["木星"],
+      "mock_response": "太阳系最大的行星是木星。",
+      "priority": "high"
+    },
+    {
+      "id": "ACC_030",
+      "name": "食物知识-菜系",
+      "category": "food",
+      "query": "川菜的特点是什么？",
+      "expected_keywords": ["麻辣", "辣"],
+      "mock_response": "川菜的特点是麻辣鲜香，以辣味著称。",
+      "priority": "low"
+    }
+  ]
+}

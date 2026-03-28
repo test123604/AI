@@ -1,0 +1,225 @@
+{
+  "description": "格式规范测试用例 - 测试模型回答格式是否符合要求",
+  "test_cases": [
+    {
+      "id": "FMT_001",
+      "name": "长度限制-最大长度",
+      "category": "length_limit",
+      "query": "请详细介绍人工智能的历史",
+      "format_requirements": {
+        "max_length": 500
+      },
+      "mock_response": "人工智能的历史可以追溯到20世纪50年代。1956年，达特茅斯会议首次提出'人工智能'这一术语。随后，AI经历了多次发展浪潮，包括专家系统、机器学习、深度学习等阶段。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_002",
+      "name": "长度限制-最小长度",
+      "category": "length_limit",
+      "query": "什么是AI？",
+      "format_requirements": {
+        "min_length": 20
+      },
+      "mock_response": "AI是Artificial Intelligence的缩写，中文称为人工智能，是计算机科学的一个重要分支。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_003",
+      "name": "必须包含关键词",
+      "category": "content_requirement",
+      "query": "请介绍Python语言",
+      "format_requirements": {
+        "contains": ["Python", "编程", "语言"]
+      },
+      "mock_response": "Python是一种高级编程语言，以其简洁的语法和强大的功能而著称。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_004",
+      "name": "禁止包含词汇",
+      "category": "content_restriction",
+      "query": "评价某个产品",
+      "format_requirements": {
+        "not_contains": ["垃圾", "烂", "差"]
+      },
+      "mock_response": "这个产品有其优点和不足之处，建议根据个人需求选择。",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_005",
+      "name": "正则表达式-年份格式",
+      "category": "pattern",
+      "query": "北京奥运会哪年举办？",
+      "format_requirements": {
+        "pattern": "\\d{4}年"
+      },
+      "mock_response": "北京奥运会是在2008年举办的。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_006",
+      "name": "正则表达式-邮箱格式",
+      "category": "pattern",
+      "query": "请给出一个示例邮箱",
+      "format_requirements": {
+        "pattern": "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+      },
+      "mock_response": "示例邮箱地址是：example@test.com",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_007",
+      "name": "正则表达式-电话号码",
+      "category": "pattern",
+      "query": "请给出手机号格式示例",
+      "format_requirements": {
+        "pattern": "1[3-9]\\d{9}"
+      },
+      "mock_response": "中国手机号格式示例：13812345678",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_008",
+      "name": "JSON格式输出",
+      "category": "structured_output",
+      "query": "用JSON格式返回你的名字",
+      "format_requirements": {
+        "pattern": "\\{[\"']name[\"']:\\s*[\"']([^\"']+)[\"']\\}"
+      },
+      "mock_response": "{\"name\": \"AI助手\"}",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_009",
+      "name": "列表格式",
+      "category": "structured_output",
+      "query": "列出三种颜色",
+      "format_requirements": {
+        "contains": ["1.", "2.", "3."]
+      },
+      "mock_response": "三种颜色：1. 红色 2. 蓝色 3. 绿色",
+      "priority": "low"
+    },
+    {
+      "id": "FMT_010",
+      "name": "中英文混合-英文单词",
+      "category": "language_mix",
+      "query": "AI的全称是什么？",
+      "format_requirements": {
+        "contains": ["Artificial", "Intelligence"]
+      },
+      "mock_response": "AI的全称是Artificial Intelligence。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_011",
+      "name": "数字格式-阿拉伯数字",
+      "category": "number_format",
+      "query": "一年有多少个月？",
+      "format_requirements": {
+        "contains": ["12"]
+      },
+      "mock_response": "一年有12个月。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_012",
+      "name": "单位要求-百分比",
+      "category": "unit_requirement",
+      "query": "50%的一半是多少？",
+      "format_requirements": {
+        "contains": ["%"]
+      },
+      "mock_response": "50%的一半是25%。",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_013",
+      "name": "日期格式-年月日",
+      "category": "date_format",
+      "query": "今天是几月几日？",
+      "format_requirements": {
+        "pattern": "\\d+月\\d+日"
+      },
+      "mock_response": "今天是3月28日。",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_014",
+      "name": "代码块格式",
+      "category": "code_format",
+      "query": "写出Hello World的Python代码",
+      "format_requirements": {
+        "contains": ["print", "(", ")"]
+      },
+      "mock_response": "代码：print('Hello World')",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_015",
+      "name": "URL格式",
+      "category": "url_format",
+      "query": "给出一个网站地址示例",
+      "format_requirements": {
+        "pattern": "https?://[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
+      },
+      "mock_response": "网站地址示例：https://www.example.com",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_016",
+      "name": "货币格式",
+      "category": "currency_format",
+      "query": "100元的一半是多少？",
+      "format_requirements": {
+        "contains": ["元"]
+      },
+      "mock_response": "100元的一半是50元。",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_017",
+      "name": "温度格式",
+      "category": "temperature_format",
+      "query": "人体正常体温是多少？",
+      "format_requirements": {
+        "contains": ["℃", "度"]
+      },
+      "mock_response": "人体正常体温约37℃。",
+      "priority": "medium"
+    },
+    {
+      "id": "FMT_018",
+      "name": "标点符号规范-句号",
+      "category": "punctuation",
+      "query": "你好吗",
+      "format_requirements": {
+        "contains": ["。", "？", "！"]
+      },
+      "mock_response": "我很好，谢谢关心。",
+      "priority": "low"
+    },
+    {
+      "id": "FMT_019",
+      "name": "不能为空响应",
+      "category": "non_empty",
+      "query": "请问现在几点了？",
+      "format_requirements": {
+        "min_length": 1
+      },
+      "mock_response": "抱歉，我无法获取实时时间。",
+      "priority": "high"
+    },
+    {
+      "id": "FMT_020",
+      "name": "不能全为空格",
+      "category": "non_whitespace",
+      "query": "介绍你自己",
+      "format_requirements": {
+        "pattern": "[^\\s]+"
+      },
+      "mock_response": "我是一个AI助手，可以帮助回答问题。",
+      "priority": "high"
+    }
+  ]
+}

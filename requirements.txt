@@ -1,0 +1,20 @@
+# pytest 测试框架
+pytest==8.0.0
+pytest-cov==4.1.0
+pytest-xdist==3.5.0
+
+# Allure 测试报告
+allure-pytest==2.13.5
+
+# NLP 和 机器学习
+sentence-transformers==2.3.1
+scikit-learn==1.4.0
+jieba==0.42.1
+numpy==1.26.3
+
+# 数据处理
+pandas==2.1.4
+
+# 其他工具
+python-dotenv==1.0.0
+requests==2.31.0
