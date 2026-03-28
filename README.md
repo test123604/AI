@@ -247,14 +247,6 @@ MIT
 
 ---
 
-## 📋 简历版项目描述
-
-> **适用于 AI 模型测试、提示词工程岗位**
-
-**项目名称**：AI 大模型自动化测试框架
-
-**技术栈**：Python, Pytest, LangChain, jieba, SentenceTransformer, scikit-learn, dashscope, Allure
-
 **项目描述**：
 
 设计并实现了一套基于 **Python + Pytest + LangChain** 的大模型自动化测试框架，支持通义千问、DeepSeek、OpenAI、Coze 工作流等多种平台的测试评估。
