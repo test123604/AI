@@ -1,0 +1,69 @@
+LangChain 简介与使用指南
+
+LangChain 是一个强大的框架，用于开发由语言模型驱动的应用程序。它提供了一套全面的工具和组件，帮助开发者轻松构建复杂的 AI 应用。
+
+什么是 LangChain？
+
+LangChain 是一个开源框架，旨在简化大语言模型（LLM）应用的开发流程。它提供了模块化的组件，可以灵活组合，满足各种应用场景的需求。
+
+核心组件
+
+1. 链（Chains）
+链是 LangChain 的核心概念，它将多个组件（如提示词、模型、输出解析器）连接在一起，形成一个完整的处理流程。
+
+2. 提示词模板（Prompt Templates）
+提示词模板帮助开发者管理提示词，支持变量插入和格式化，使提示词更加灵活和可维护。
+
+3. 记忆（Memory）
+记忆组件允许模型在多轮对话中保持上下文，实现连贯的对话体验。
+
+4. 索引（Indexing）
+索引模块提供了文档加载、分割和向量化的功能，是构建 RAG 应用的基础。
+
+5. 代理（Agents）
+代理可以根据用户输入动态决定使用哪些工具来完成任务，大大扩展了模型的能力。
+
+RAG（检索增强生成）是什么？
+
+RAG（Retrieval-Augmented Generation，检索增强生成）是一种将信息检索与生成式 AI 相结合的技术。它通过从知识库中检索相关文档，然后将这些文档作为上下文提供给语言模型，从而生成更准确、更可靠的回答。
+
+RAG 的工作流程
+
+1. 文档加载：从各种来源（PDF、文本、网页等）加载文档
+2. 文档分割：将长文档分割成适合处理的小块
+3. 向量化：将文本块转换为向量表示
+4. 存储：将向量存储在向量数据库中
+5. 检索：根据查询检索最相关的文档块
+6. 生成：将检索到的文档作为上下文，生成回答
+
+为什么使用 RAG？
+
+- 减少幻觉：模型基于真实文档生成回答，减少了编造信息的可能性
+- 知识更新：可以通过更新文档来保持知识的时效性
+- 可解释性：可以查看模型引用的文档来源，增强信任度
+- 成本效益：相比模型微调，RAG 的实现成本更低
+
+快速开始
+
+要开始使用 LangChain，首先安装所需的库：
+
+pip install langchain langchain-openai
+
+然后创建一个简单的链：
+
+from langchain_openai import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate
+
+llm = ChatOpenAI(model="gpt-3.5-turbo")
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "你是一个乐于助人的助手。"),
+    ("user", "{input}")
+])
+
+chain = prompt | llm
+response = chain.invoke({"input": "你好！"})
+print(response.content)
+
+总结
+
+LangChain 是一个功能强大的框架，特别适合构建需要语言模型能力的应用。通过模块化的设计，开发者可以快速构建各种 AI 应用，从简单的聊天机器人到复杂的 RAG 系统。

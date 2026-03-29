@@ -1,0 +1,6 @@
+# 简化版 RAG 依赖
+langchain
+langchain-community
+langchain-openai
+sentence-transformers
+python-dotenv
