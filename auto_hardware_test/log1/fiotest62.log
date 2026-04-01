@@ -1,0 +1,176 @@
+fiotest62: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 64 threads
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+
+fiotest62: (groupid=0, jobs=64): err= 0: pid=33006: Wed Dec 16 07:59:20 2020
+   read: IOPS=1291k, BW=5044MiB/s (5289MB/s)(1478GiB/300001msec)
+    clat (usec): min=7, max=26801, avg=31.57, stdev=28.63
+     lat (usec): min=7, max=26802, avg=31.69, stdev=28.64
+    clat percentiles (usec):
+     |  1.00th=[   15],  5.00th=[   17], 10.00th=[   18], 20.00th=[   20],
+     | 30.00th=[   21], 40.00th=[   23], 50.00th=[   25], 60.00th=[   28],
+     | 70.00th=[   31], 80.00th=[   36], 90.00th=[   49], 95.00th=[   79],
+     | 99.00th=[  124], 99.50th=[  143], 99.90th=[  347], 99.95th=[  424],
+     | 99.99th=[  627]
+   bw (  KiB/s): min=  209, max=131862, per=1.57%, avg=80987.69, stdev=5401.94, samples=38167
+   iops        : min=   52, max=32965, avg=20246.89, stdev=1350.49, samples=38167
+  write: IOPS=553k, BW=2162MiB/s (2267MB/s)(633GiB/300001msec)
+    clat (usec): min=11, max=24321, avg=34.97, stdev=22.84
+     lat (usec): min=11, max=24322, avg=35.17, stdev=22.87
+    clat percentiles (usec):
+     |  1.00th=[   19],  5.00th=[   21], 10.00th=[   22], 20.00th=[   24],
+     | 30.00th=[   26], 40.00th=[   28], 50.00th=[   30], 60.00th=[   33],
+     | 70.00th=[   36], 80.00th=[   41], 90.00th=[   51], 95.00th=[   71],
+     | 99.00th=[  120], 99.50th=[  133], 99.90th=[  157], 99.95th=[  172],
+     | 99.99th=[  404]
+   bw (  KiB/s): min=   63, max=57546, per=1.57%, avg=34707.79, stdev=2345.65, samples=38167
+   iops        : min=   15, max=14386, avg=8676.92, stdev=586.42, samples=38167
+  lat (usec)   : 10=0.01%, 20=19.53%, 50=70.56%, 100=7.32%, 250=2.45%
+  lat (usec)   : 500=0.11%, 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+  cpu          : usr=9.53%, sys=25.86%, ctx=563428123, majf=10, minf=673761
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=387391190,166018076,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=5044MiB/s (5289MB/s), 5044MiB/s-5044MiB/s (5289MB/s-5289MB/s), io=1478GiB (1587GB), run=300001-300001msec
+  WRITE: bw=2162MiB/s (2267MB/s), 2162MiB/s-2162MiB/s (2267MB/s-2267MB/s), io=633GiB (680GB), run=300001-300001msec
+
+Disk stats (read/write):
+    md126: ios=387390984/166017175, merge=0/0, ticks=7189465/3567839, in_queue=10757304, util=99.88%, aggrios=96848414/41504519, aggrmerge=8/0, aggrticks=1932467/946285, aggrin_queue=2878752, aggrutil=99.19%
+  nvme0n1: ios=96735374/41458176, merge=34/0, ticks=1909834/936263, in_queue=2846098, util=99.18%
+  nvme3n1: ios=96766978/41458139, merge=0/0, ticks=1932327/946425, in_queue=2878752, util=99.17%
+  nvme2n1: ios=96765913/41458446, merge=0/0, ticks=1930782/945573, in_queue=2876354, util=99.15%
+  nvme1n1: ios=97125394/41643315, merge=0/0, ticks=1956928/956879, in_queue=2913807, util=99.19%

@@ -1,0 +1,52 @@
+fiotest31: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 8 threads
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+
+fiotest31: (groupid=0, jobs=8): err= 0: pid=17854: Wed Dec 16 03:52:50 2020
+   read: IOPS=556k, BW=2170MiB/s (2276MB/s)(636GiB/300001msec)
+    clat (usec): min=7, max=1578, avg=13.69, stdev= 2.00
+     lat (usec): min=7, max=1578, avg=13.74, stdev= 2.01
+    clat percentiles (nsec):
+     |  1.00th=[10432],  5.00th=[11456], 10.00th=[11840], 20.00th=[12480],
+     | 30.00th=[12864], 40.00th=[13120], 50.00th=[13504], 60.00th=[13760],
+     | 70.00th=[14272], 80.00th=[14912], 90.00th=[15808], 95.00th=[16512],
+     | 99.00th=[18304], 99.50th=[19328], 99.90th=[21632], 99.95th=[22912],
+     | 99.99th=[31104]
+   bw (  KiB/s): min=23496, max=324216, per=12.50%, avg=277750.06, stdev=22054.01, samples=4792
+   iops        : min= 5874, max=81054, avg=69437.48, stdev=5513.50, samples=4792
+  lat (usec)   : 10=0.59%, 20=99.11%, 50=0.29%, 100=0.01%, 250=0.01%
+  lat (usec)   : 500=0.01%, 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.01%
+  cpu          : usr=8.73%, sys=30.33%, ctx=166674466, majf=0, minf=161984
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=166678709,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=2170MiB/s (2276MB/s), 2170MiB/s-2170MiB/s (2276MB/s-2276MB/s), io=636GiB (683GB), run=300001-300001msec
+
+Disk stats (read/write):
+    md126: ios=166583700/0, merge=0/0, ticks=1483139/0, in_queue=1483139, util=100.00%, aggrios=41669677/0, aggrmerge=0/0, aggrticks=417975/0, aggrin_queue=417974, aggrutil=99.90%
+  nvme0n1: ios=41562999/0, merge=0/0, ticks=414684/0, in_queue=414683, util=99.90%
+  nvme3n1: ios=41579855/0, merge=0/0, ticks=415751/0, in_queue=415751, util=99.90%
+  nvme2n1: ios=41564239/0, merge=0/0, ticks=416869/0, in_queue=416869, util=99.90%
+  nvme1n1: ios=41971616/0, merge=0/0, ticks=424596/0, in_queue=424595, util=99.90%

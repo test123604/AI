@@ -1,0 +1,112 @@
+fiotest61: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 32 threads
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+
+fiotest61: (groupid=0, jobs=32): err= 0: pid=7540: Wed Dec 16 07:51:15 2020
+   read: IOPS=954k, BW=3725MiB/s (3906MB/s)(1091GiB/300001msec)
+    clat (usec): min=7, max=8189, avg=21.45, stdev=19.60
+     lat (usec): min=7, max=8189, avg=21.53, stdev=19.61
+    clat percentiles (usec):
+     |  1.00th=[   13],  5.00th=[   14], 10.00th=[   15], 20.00th=[   16],
+     | 30.00th=[   17], 40.00th=[   18], 50.00th=[   18], 60.00th=[   19],
+     | 70.00th=[   20], 80.00th=[   21], 90.00th=[   25], 95.00th=[   36],
+     | 99.00th=[  111], 99.50th=[  121], 99.90th=[  223], 99.95th=[  330],
+     | 99.99th=[  490]
+   bw (  KiB/s): min= 1079, max=141768, per=3.13%, avg=119335.12, stdev=5695.71, samples=19141
+   iops        : min=  269, max=35442, avg=29833.75, stdev=1423.93, samples=19141
+  write: IOPS=409k, BW=1597MiB/s (1674MB/s)(468GiB/300001msec)
+    clat (usec): min=10, max=13600, avg=24.25, stdev=14.25
+     lat (usec): min=10, max=13600, avg=24.38, stdev=14.26
+    clat percentiles (usec):
+     |  1.00th=[   16],  5.00th=[   18], 10.00th=[   18], 20.00th=[   20],
+     | 30.00th=[   20], 40.00th=[   21], 50.00th=[   22], 60.00th=[   23],
+     | 70.00th=[   24], 80.00th=[   25], 90.00th=[   29], 95.00th=[   35],
+     | 99.00th=[  103], 99.50th=[  116], 99.90th=[  145], 99.95th=[  157],
+     | 99.99th=[  184]
+   bw (  KiB/s): min=  566, max=60904, per=3.13%, avg=51146.74, stdev=2478.88, samples=19141
+   iops        : min=  141, max=15226, avg=12786.65, stdev=619.72, samples=19141
+  lat (usec)   : 10=0.01%, 20=61.97%, 50=34.12%, 100=2.56%, 250=1.27%
+  lat (usec)   : 500=0.05%, 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%
+  cpu          : usr=8.31%, sys=27.97%, ctx=410434184, majf=0, minf=390827
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=286087573,122615948,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=3725MiB/s (3906MB/s), 3725MiB/s-3725MiB/s (3906MB/s-3906MB/s), io=1091GiB (1172GB), run=300001-300001msec
+  WRITE: bw=1597MiB/s (1674MB/s), 1597MiB/s-1597MiB/s (1674MB/s-1674MB/s), io=468GiB (502GB), run=300001-300001msec
+
+Disk stats (read/write):
+    md126: ios=286084181/122614038, merge=0/0, ticks=4242581/2101777, in_queue=6344358, util=100.00%, aggrios=71522252/30653987, aggrmerge=4/0, aggrticks=1129269/553746, aggrin_queue=1683016, aggrutil=99.90%
+  nvme0n1: ios=71409759/30601528, merge=17/0, ticks=1115319/547280, in_queue=1662599, util=99.90%
+  nvme3n1: ios=71420757/30609340, merge=0/0, ticks=1130991/554729, in_queue=1685719, util=99.89%
+  nvme2n1: ios=71422096/30606273, merge=0/0, ticks=1126328/552437, in_queue=1678765, util=99.89%
+  nvme1n1: ios=71836396/30798807, merge=0/0, ticks=1144440/560541, in_queue=1704981, util=99.90%

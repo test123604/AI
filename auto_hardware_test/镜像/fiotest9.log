@@ -1,0 +1,32 @@
+fiotest9: (g=0): rw=read, bs=(R) 64.0KiB-64.0KiB, (W) 64.0KiB-64.0KiB, (T) 64.0KiB-64.0KiB, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 4 threads
+
+fiotest9: (groupid=0, jobs=4): err= 0: pid=2210: Tue Dec 28 11:34:13 2021
+   read: IOPS=50.0k, BW=3128MiB/s (3280MB/s)(916GiB/300003msec)
+    clat (usec): min=37, max=2695, avg=79.44, stdev=66.68
+     lat (usec): min=37, max=2695, avg=79.49, stdev=66.68
+    clat percentiles (usec):
+     |  1.00th=[   49],  5.00th=[   60], 10.00th=[   61], 20.00th=[   61],
+     | 30.00th=[   62], 40.00th=[   62], 50.00th=[   63], 60.00th=[   69],
+     | 70.00th=[   74], 80.00th=[   87], 90.00th=[  112], 95.00th=[  120],
+     | 99.00th=[  359], 99.50th=[  553], 99.90th=[ 1012], 99.95th=[ 1172],
+     | 99.99th=[ 1532]
+   bw (  KiB/s): min=713600, max=841856, per=25.00%, avg=800721.50, stdev=21991.42, samples=2400
+   iops        : min=11150, max=13154, avg=12511.26, stdev=343.61, samples=2400
+  lat (usec)   : 50=1.49%, 100=84.94%, 250=12.24%, 500=0.72%, 750=0.35%
+  lat (usec)   : 1000=0.15%
+  lat (msec)   : 2=0.10%, 4=0.01%
+  cpu          : usr=1.54%, sys=9.43%, ctx=15014345, majf=0, minf=1640
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=15014084,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=3128MiB/s (3280MB/s), 3128MiB/s-3128MiB/s (3280MB/s-3280MB/s), io=916GiB (984GB), run=300003-300003msec
+
+Disk stats (read/write):
+  sdd: ios=15006435/0, merge=0/0, ticks=15466/0, in_queue=1084169, util=100.00%

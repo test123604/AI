@@ -1,0 +1,36 @@
+fiotest38: (g=0): rw=randread, bs=(R) 64.0KiB-64.0KiB, (W) 64.0KiB-64.0KiB, (T) 64.0KiB-64.0KiB, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 8 threads
+fio: pid=18200, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+fio: pid=18201, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+fio: pid=18198, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+
+fiotest38: (groupid=0, jobs=8): err=61 (file:io_u.c:1747, func=io_u error, error=No data available): pid=18194: Wed Dec 29 18:40:16 2021
+   read: IOPS=7802, BW=488MiB/s (511MB/s)(143GiB/300002msec)
+    clat (usec): min=43, max=1401.5k, avg=928.92, stdev=2757.42
+     lat (usec): min=43, max=1401.5k, avg=928.98, stdev=2757.42
+    clat percentiles (usec):
+     |  1.00th=[  172],  5.00th=[  172], 10.00th=[  174], 20.00th=[  212],
+     | 30.00th=[  343], 40.00th=[  635], 50.00th=[  881], 60.00th=[ 1090],
+     | 70.00th=[ 1270], 80.00th=[ 1467], 90.00th=[ 1762], 95.00th=[ 2024],
+     | 99.00th=[ 2540], 99.50th=[ 2802], 99.90th=[ 5342], 99.95th=[ 8094],
+     | 99.99th=[23725]
+   bw (  KiB/s): min=  128, max=77952, per=13.37%, avg=66746.60, stdev=5342.61, samples=4332
+   iops        : min=    2, max= 1218, avg=1042.72, stdev=83.50, samples=4332
+  lat (usec)   : 50=0.01%, 100=0.01%, 250=21.09%, 500=14.67%, 750=8.56%
+  lat (usec)   : 1000=11.36%
+  lat (msec)   : 2=39.09%, 4=5.06%, 10=0.12%, 20=0.02%, 50=0.01%
+  lat (msec)   : 750=0.01%
+  cpu          : usr=0.17%, sys=0.75%, ctx=2340931, majf=0, minf=10572
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.1%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=2340651,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=488MiB/s (511MB/s), 488MiB/s-488MiB/s (511MB/s-511MB/s), io=143GiB (153GB), run=300002-300002msec
+
+Disk stats (read/write):
+  sde: ios=2339514/0, merge=0/0, ticks=1197566/0, in_queue=2158501, util=100.00%

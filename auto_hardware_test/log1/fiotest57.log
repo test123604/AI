@@ -1,0 +1,49 @@
+fiotest57: (g=0): rw=randrw, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+fio-3.7
+Starting 1 thread
+fio: file /dev/md126 exceeds 32-bit tausworthe random generator.
+fio: Switching to tausworthe64. Use the random_generator= option to get rid of this warning.
+
+fiotest57: (groupid=0, jobs=1): err= 0: pid=27563: Wed Dec 16 07:19:21 2020
+   read: IOPS=51.0k, BW=203MiB/s (213MB/s)(59.5GiB/300001msec)
+    clat (usec): min=7, max=2171, avg=11.97, stdev= 3.52
+     lat (usec): min=8, max=2171, avg=12.01, stdev= 3.53
+    clat percentiles (usec):
+     |  1.00th=[   10],  5.00th=[   11], 10.00th=[   11], 20.00th=[   11],
+     | 30.00th=[   12], 40.00th=[   12], 50.00th=[   12], 60.00th=[   12],
+     | 70.00th=[   12], 80.00th=[   12], 90.00th=[   17], 95.00th=[   18],
+     | 99.00th=[   20], 99.50th=[   25], 99.90th=[   58], 99.95th=[   88],
+     | 99.99th=[  115]
+   bw (  KiB/s): min=122512, max=219752, per=99.99%, avg=207944.67, stdev=8334.53, samples=599
+   iops        : min=30628, max=54938, avg=51986.15, stdev=2083.64, samples=599
+  write: IOPS=22.3k, BW=87.1MiB/s (91.3MB/s)(25.5GiB/300001msec)
+    clat (usec): min=10, max=1649, avg=14.63, stdev= 4.07
+     lat (usec): min=10, max=1649, avg=14.70, stdev= 4.09
+    clat percentiles (usec):
+     |  1.00th=[   13],  5.00th=[   13], 10.00th=[   13], 20.00th=[   14],
+     | 30.00th=[   14], 40.00th=[   14], 50.00th=[   14], 60.00th=[   14],
+     | 70.00th=[   14], 80.00th=[   15], 90.00th=[   21], 95.00th=[   23],
+     | 99.00th=[   27], 99.50th=[   31], 99.90th=[   58], 99.95th=[   88],
+     | 99.99th=[  116]
+   bw (  KiB/s): min=52040, max=93992, per=100.00%, avg=89149.65, stdev=3626.90, samples=599
+   iops        : min=13010, max=23498, avg=22287.38, stdev=906.72, samples=599
+  lat (usec)   : 10=2.69%, 20=93.54%, 50=3.66%, 100=0.09%, 250=0.02%
+  lat (usec)   : 500=0.01%, 750=0.01%, 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%
+  cpu          : usr=10.06%, sys=32.93%, ctx=22283092, majf=0, minf=23412
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=15596800,6686477,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=203MiB/s (213MB/s), 203MiB/s-203MiB/s (213MB/s-213MB/s), io=59.5GiB (63.9GB), run=300001-300001msec
+  WRITE: bw=87.1MiB/s (91.3MB/s), 87.1MiB/s-87.1MiB/s (91.3MB/s-91.3MB/s), io=25.5GiB (27.4GB), run=300001-300001msec
+
+Disk stats (read/write):
+    md126: ios=15590783/6683811, merge=0/0, ticks=103679/60477, in_queue=164156, util=99.89%, aggrios=3899222/1671619, aggrmerge=0/0, aggrticks=31575/17619, aggrin_queue=49194, aggrutil=99.93%
+  nvme0n1: ios=3888545/1667820, merge=2/0, ticks=31546/17555, in_queue=49100, util=99.89%
+  nvme3n1: ios=3891158/1667983, merge=0/0, ticks=31666/17645, in_queue=49312, util=99.90%
+  nvme2n1: ios=3890355/1665950, merge=0/0, ticks=30995/17442, in_queue=48437, util=99.92%
+  nvme1n1: ios=3926830/1684724, merge=0/0, ticks=32095/17835, in_queue=49930, util=99.93%

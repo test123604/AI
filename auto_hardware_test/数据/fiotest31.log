@@ -1,0 +1,35 @@
+fiotest31: (g=0): rw=randread, bs=(R) 4096B-4096B, (W) 4096B-4096B, (T) 4096B-4096B, ioengine=psync, iodepth=1
+...
+fio-3.7
+Starting 8 threads
+fio: pid=27451, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+fio: pid=27453, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+fio: pid=27455, err=61/file:io_u.c:1747, func=io_u error, error=No data available
+
+fiotest31: (groupid=0, jobs=8): err=61 (file:io_u.c:1747, func=io_u error, error=No data available): pid=27450: Wed Dec 29 18:04:36 2021
+   read: IOPS=57.6k, BW=225MiB/s (236MB/s)(65.9GiB/300001msec)
+    clat (usec): min=34, max=41709, avg=105.14, stdev=60.91
+     lat (usec): min=34, max=41709, avg=105.20, stdev=60.91
+    clat percentiles (usec):
+     |  1.00th=[   42],  5.00th=[   44], 10.00th=[   47], 20.00th=[   55],
+     | 30.00th=[   70], 40.00th=[  100], 50.00th=[  112], 60.00th=[  119],
+     | 70.00th=[  130], 80.00th=[  147], 90.00th=[  157], 95.00th=[  167],
+     | 99.00th=[  186], 99.50th=[  198], 99.90th=[  249], 99.95th=[  351],
+     | 99.99th=[ 1172]
+   bw (  KiB/s): min= 7432, max=40192, per=15.93%, avg=36726.96, stdev=2054.45, samples=3660
+   iops        : min= 1858, max=10048, avg=9181.62, stdev=513.66, samples=3660
+  lat (usec)   : 50=15.64%, 100=24.07%, 250=60.19%, 500=0.08%, 750=0.01%
+  lat (usec)   : 1000=0.01%
+  lat (msec)   : 2=0.01%, 4=0.01%, 10=0.01%, 20=0.01%, 50=0.01%
+  cpu          : usr=1.73%, sys=6.72%, ctx=17286886, majf=0, minf=22202
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.1%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued rwts: total=17286454,0,0,0 short=0,0,0,0 dropped=0,0,0,0
+     latency   : target=0, window=0, percentile=100.00%, depth=1
+
+Run status group 0 (all jobs):
+   READ: bw=225MiB/s (236MB/s), 225MiB/s-225MiB/s (236MB/s-236MB/s), io=65.9GiB (70.8GB), run=300001-300001msec
+
+Disk stats (read/write):
+  sde: ios=17286445/0, merge=0/0, ticks=3882/0, in_queue=1708540, util=99.94%
